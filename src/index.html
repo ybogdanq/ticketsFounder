@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Avia helper</title>
+        <script src="js/app.js" defer></script>
+        <!-- Materialize icons -->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    </head>
+    <body>
+        <div class="wrapper">
+            <nav class="header light-blue darken-3">
+                <div class="nav-wrapper">
+                    <div class="container d-flex align-items-center justify-content-sb ">
+                        <div class="logo d-flex align-items-center">
+                            <i class="large material-icons">flight_takeoff</i>
+                            <a href="#" class="brand-logo">Avia Tickets</a>
+                        </div>
+
+                        <div class="favourite-handler">
+                            <a class='dropdown-trigger btn favourites-dropdown light-blue darken-3' href='#' data-target='dropdown1'>Favourites</a>
+
+                            <!-- Dropdown Structure -->
+                            <ul id='dropdown1' class='dropdown-content favourites-dropdown-content'>
+                                
+                            </ul>
+                        </div>
+                        
+                        <ul id="nav-mobile" class="right hide-on-med-and-down">
+                          <li>
+                              <div class="input-field currency-select">
+                                  <select id="currency">
+                                    
+                                    <option value="USD">$ US Dollar</option>
+                                    <option value="EUR">€ Euro</option>
+                                    
+                                  </select>
+                                </div>
+                          </li>
+                        </ul>
+
+                    </div>
+                </div>
+              </nav>
+
+              <div class="form-section">
+                  <div class="container">
+                      <div class="row d-flex">
+                          <div class="col m6 mx-auto">
+                              <div class="card ">
+                                  <form name="locationControls">
+                                      <div class="card-content">
+                                        <div class="card-title">
+                                            Search for tickets
+                                        </div>
+                                        <div class="input-field">
+                                            <input type="text" id="autocomplete-origin" class="autocomplete" autocomplete="off">
+                                            <label for="autocomplete-origin">Origin</label>
+                                        </div>
+                                        <div class="input-field">
+                                            <input type="text" id="autocomplete-destination" class="autocomplete" autocomplete="off">
+                                            <label for="autocomplete-destination">Destination</label>
+                                        </div>
+                                        <div class="input-field">
+                                            <input type="text" class="datepicker" id="datepicker-depart">
+                                            <label for="datepicker-depart">Depart date</label>
+
+                                        </div>
+                                        <div class="input-field">
+                                            <input type="text" class="datepicker" id="datepicker-return">
+                                            <label for="datepicker-return">Return date</label>
+
+                                        </div>
+                                      </div>
+                                      <div class="card-action d-flex">
+                                        <button class="btn waves-effect light-blue darken-3" type="submit" name="action">search
+                                            <i class="material-icons right">search</i>
+                                        </button>
+                                        <button class="btn waves-effect pink darken-2 ml-auto" type="reset" name="action">cancel
+                                            <i class="material-icons right">cancel</i>
+                                          </button>
+                                      </div>
+                                  </form>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+
+              
+
+              <div class="contianer">
+                    <!-- <div class="notFoundTickets">
+                        <h5>
+                            Tickets not found
+                        </h5>
+                    </div> -->
+                    <div class="tickets-container">
+                        <!-- <div class="ticket">
+                            <div class="ticket__header">
+                                <div class="airlines__logo">
+                                    <img src="http://pics.avs.io/200/200/HQ.png" alt="">    
+                                  </div>
+                                  <h6 class="airlines__name" id="airlinesName">
+                                    Thomas Cook Airlines Belgium
+                                  </h6>
+                            </div>
+                            
+                            <div class="ticket__body">
+                                <div class="origin__country" id="originCity">Харьков</div>
+                                <div class="destination__country" id="destinationCity">Львов</div>
+                               
+                            </div>
+                            <div class="ticket__footer">
+                                <div class="travel__info__leftside">
+                                    <div class="ticket__date" id="ticketDate">
+                                        14 Sep 2019 02:30
+                                    </div>
+                                    <div class="ticket__subinfo" id="ticketRoadInfo">
+                                        <strong>Пересадок: 1 Номер рейса: 29</strong> 
+                                    </div>
+                                    
+                                </div>
+                                <div class="travel__info__rightside">
+                                    <button class="btn waves-effect light-blue darken-3">$315</button>
+                                </div>
+                            </div>
+      
+                        </div> -->
+                    </div>
+
+                  
+              </div>
+        </div>
+    </body>
+
+</html>
