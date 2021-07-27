@@ -31,6 +31,7 @@ export class Locations {
 
   getCityCodeByKey(key) {
     const city = Object.values(this.cities).find((item) => {
+      console.log(item.full_name, key);
       return item.full_name === key;
     });
 
